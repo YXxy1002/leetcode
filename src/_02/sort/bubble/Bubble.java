@@ -4,6 +4,8 @@ package _02.sort.bubble;
  * 冒泡排序
  *
  * @author xieyu
+ * @keywords: 冒泡
+ * @ideas: 每次交换后把最大的移动到最后
  * @since 2021/07/29 下午 8:26
  */
 public class Bubble {
@@ -23,7 +25,7 @@ public class Bubble {
     }
 
     /**
-     * 每次交换后把最大的移动到最后
+     * 每次交换后把最大的移动到最后,如果没发生交换说明已经有序,直接跳出
      *
      * @param arr
      */
