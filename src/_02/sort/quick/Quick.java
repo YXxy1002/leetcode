@@ -1,7 +1,5 @@
 package _02.sort.quick;
 
-import java.util.Queue;
-
 /**
  * @author xieyu
  * @since 2021/08/04 14:39
