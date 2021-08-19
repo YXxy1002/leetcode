@@ -1,5 +1,7 @@
 package _03.tree.preorderTraversal;
 
+import _03.tree.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,12 +44,15 @@ public class Morris {
         //如果cur不为空就继续遍历
         while (cur != null) {
             if (cur.left == null) {
-                // 右边为空,打印当前节点,并开始遍历右边节点
+                // 左边为空,打印当前节点,并开始遍历右边节点
+//                printAndTravelRight();
             } else {
                 // 1.找到左节点的最右节点
-
+//                findMostRight();
                 // 2.如果最右节点是空那就跟cur连起来,并打印cur,然后cur指向下一个
+//                printWhenRightIsNull();
                 // 3.如果cur不是空说明已经连起来了,证明左子树已经遍历完毕,这时候去掉这跟连线,将cur指向cur的右节点
+//                removeLinkAndTravelNextRightWhenRightIsNotNull();
             }
         }
         return res;
