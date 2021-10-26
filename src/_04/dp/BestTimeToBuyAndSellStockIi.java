@@ -5,7 +5,7 @@ package _04.dp;
  *
  * @author xieyu
  * @keywords: dp
- * @ideas: dp: 当天卖出或者买入后的最大现金 dp[i][0] = 当天买入股票后的最大现金, dp[i][1] = 当天卖出股票后的最大现金
+ * @ideas: dp: 当天卖出或者买入后的最大收益 dp[i][0] = 当天买入股票后的最大收益, dp[i][1] = 当天卖出股票后的最大收益
  * @since 2021-7-6 21:24:57
  */
 public class BestTimeToBuyAndSellStockIi {
