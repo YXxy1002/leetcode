@@ -1,0 +1,7 @@
+二分两种写法:
+1)
+右闭区间: while (left <= right)
+check条件: if (nums[middle] > target) 这时候 right = mid - 1, 因为mid是无效的
+2)
+右开区间: while (left < right)
+check条件: if (nums[middle] > target) 这时候right = mid, 因为mid作为右边界是已经被排除了的
