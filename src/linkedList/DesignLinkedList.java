@@ -1,10 +1,10 @@
 package linkedList;
 
 /**
- * 203. 移除链表元素
+ * 707. 设计链表
  *
  * @author xieyu
- * @keywords: dummy结点
+ * @keywords:
  * @ideas:
  * @since 2021-7-8 15:41:50
  */
