@@ -2,6 +2,7 @@ package linkedList;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 142. 环形链表 II
@@ -12,7 +13,12 @@ import java.util.List;
  * @since 2021-7-8 15:41:50
  */
 public class LinkedListCycleIi {
+
+
     public ListNode detectCycle(ListNode head) {
+        List<ListNode> res = new ArrayList<>();
+        ListNode[] listNodes = res.toArray(new ListNode[]{});
+
         ListNode fast = head;
         ListNode slow = head;
         while (fast != null) {

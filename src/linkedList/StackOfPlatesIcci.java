@@ -12,6 +12,23 @@ import java.util.List;
  * @since 2021-7-8 15:41:50
  */
 public class StackOfPlatesIcci {
+
+    List<Integer> list = new ArrayList<>();
+    public int[] reversePrint(ListNode head) {
+        if(head==null){
+            return new int[0];
+        }
+        print(head);
+        return list.stream().mapToInt(Integer::valueOf).toArray();
+    }
+    private void print(ListNode head){
+        if(head.next!=null){
+            print(head.next);
+        }
+        list.add(head.val);
+    }
+
+
     class StackOfPlates {
         List<MyStack> list;
         int cap;
