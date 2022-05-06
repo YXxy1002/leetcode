@@ -10,7 +10,6 @@ import java.util.HashSet;
  * @ideas:
  * @since 2021-7-6 21:24:57
  */
-
 public class LongestConsecutiveSequence {
     public int longestConsecutive(int[] nums) {
         HashSet<Integer> hash = new HashSet<>();
