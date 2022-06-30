@@ -22,7 +22,7 @@ public class TrappingRainWater {
                     // 栈只有一个元素,构不成凹槽,跳过
                     stack.pop();
                 } else {
-                    // 栈中第一个是左边第一个元素,第二个是左边第二个元素,这3个共同构成一个凹槽
+                    // 栈中第一个是左边第一个元素,第二个是左边第二个元素,这2个和当前元素共同构成一个凹槽
                     int bottomIndex = stack.pop();
                     int leftIndex = stack.peek();
                     int width = i - leftIndex - 1;
