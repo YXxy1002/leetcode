@@ -14,8 +14,8 @@ import java.util.Map;
  * @since 2021-7-10 20:14:32
  */
 public class NextGreaterElementI {
-
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        // map记录nums2中每个数字的下一个更大元素
         Map<Integer, Integer> map = new HashMap<>();
         Deque<Integer> stack = new LinkedList<>();
         for (int i = 0; i < nums2.length; i++) {
@@ -24,6 +24,7 @@ public class NextGreaterElementI {
             }
             stack.push(nums2[i]);
         }
+        // 看nums1中每个数字的下一个更大元素是否在map中,是就取值,否就设为-1
         int[] res = new int[nums1.length];
         for (int i = 0; i < nums1.length; i++) {
             Integer num = map.get(nums1[i]);
